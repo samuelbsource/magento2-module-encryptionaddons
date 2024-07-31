@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Console\CommandListInterface">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="encryption:key:add" xsi:type="object">SamuelbSource\EncryptionAddons\Console\Command\KeyAddCommand</item>
+                <item name="encryption:config:reencrypt" xsi:type="object">SamuelbSource\EncryptionAddons\Console\Command\ConfigReencryptAllCommand</item>
+                <item name="encryption:config:reencrypt:path" xsi:type="object">SamuelbSource\EncryptionAddons\Console\Command\ConfigReencryptPathCommand</item>
+                <item name="encryption:quote:reencrypt" xsi:type="object">SamuelbSource\EncryptionAddons\Console\Command\QuoteReencryptCommand</item>
+                <item name="encryption:order:reencrypt" xsi:type="object">SamuelbSource\EncryptionAddons\Console\Command\OrderReencryptCommand</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
